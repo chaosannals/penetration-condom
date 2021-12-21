@@ -1,3 +1,5 @@
+import asset_rc
+from loguru import logger
 from PySide6.QtWidgets import QApplication
 from condom.view.mainwindow import MainWindow
 
@@ -5,6 +7,15 @@ def main():
     '''
     
     '''
+    
+    logger.add(
+        'log/{time:YYYY-MM-DD}.log',
+        level='TRACE',
+        # rotation='00:00',
+        rotation='2000 KB',
+        retention='7 days',
+        encoding='utf8'
+    )
 
     app = QApplication()
     win = MainWindow()

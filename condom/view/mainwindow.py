@@ -3,7 +3,7 @@ from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QMainWindow
 from PySide6.QtWebEngineWidgets import QWebEngineView
 from .mainwindow_ui import Ui_MainWindow
-
+from .tabstyle import TabStyle
 
 class MainWindow(QMainWindow):
     '''
@@ -19,9 +19,7 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(QIcon(':/app.ico'))
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.browser = QWebEngineView(self)
-        self.setCentralWidget(self.browser)
-        self.browser.load(QUrl('https://baidu.com'))
+        self.ui.tabbar.tabBar().setStyle(TabStyle())
         self.show()
 
 

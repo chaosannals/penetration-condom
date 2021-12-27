@@ -13,7 +13,27 @@
   <property name="windowTitle">
    <string>PenetrationCondom</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabbar">
+      <property name="tabPosition">
+       <enum>QTabWidget::West</enum>
+      </property>
+      <widget class="WebBrowserPanel" name="tabWebBrowser">
+       <attribute name="title">
+        <string>浏览器</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -26,6 +46,14 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WebBrowserPanel</class>
+   <extends>QWidget</extends>
+   <header>condom.view.webbrowserpanel</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

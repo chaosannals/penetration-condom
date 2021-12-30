@@ -25,9 +25,29 @@
         <string>浏览器</string>
        </attribute>
       </widget>
-      <widget class="QWidget" name="tab_2">
+      <widget class="QWidget" name="tabHTTP">
        <attribute name="title">
-        <string>Tab 2</string>
+        <string>HTTP</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabICMP">
+       <attribute name="title">
+        <string>ICMP</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabFTP">
+       <attribute name="title">
+        <string>FTP</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabSSH">
+       <attribute name="title">
+        <string>SSH</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabTCP">
+       <attribute name="title">
+        <string>TCP</string>
        </attribute>
       </widget>
      </widget>

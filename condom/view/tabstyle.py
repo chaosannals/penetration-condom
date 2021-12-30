@@ -20,8 +20,8 @@ class TabStyle(QProxyStyle):
         s =  super().sizeFromContents(type, option, size, widget)
         if type == QStyle.CT_TabBarTab:
             s.transpose()
-            s.setWidth(150)
-            s.setHeight(35)
+            s.setWidth(100)
+            s.setHeight(30)
         return s
 
     def drawControl(self, element: QStyle.ControlElement, option: QStyleOption, painter: QPainter, widget: Optional[QWidget] = ...) -> None:

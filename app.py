@@ -9,7 +9,7 @@ def main():
     '''
     
     logger.add(
-        'log/{time:YYYY-MM-DD}.log',
+        'log/condom.log',
         level='TRACE',
         # rotation='00:00',
         rotation='2000 KB',
